@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-batabase.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyCW3S2mLfUcJPAnepQtYCglq9KW3Lzyoko",
+        authDomain: "hackaton-2021-59179.firebaseapp.com",
+        projectId: "hackaton-2021-59179",
+        storageBucket: "hackaton-2021-59179.appspot.com",
+        messagingSenderId: "141359218887",
+        appId: "1:141359218887:web:c91246c0915ce914a4bee2",
+        measurementId: "G-Y34N77Z1WF",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div class="side-menu">
+      <div class="brand-name">
+        <h1><span>Dashboard</span></h1>
+      </div><br/>
+      <ul>
+        <li>
+          <b
+            ><img src="images/wall-clock.png" alt="" width="20px" />&nbsp;<span>Pending Orders</span>
+            </b
+          >
+        </li>
+        <li>
+          <b
+            ><img
+              src="images/accept-circular-button-outline.png"
+              alt=""
+              width="20px"
+            />&nbsp;<span>Accepted Orders</span></b
+          >
+        </li>
+        <li>
+          <b
+            ><img
+              src="images/delivered.png"
+              alt=""
+              width="20px"
+            />&nbsp;<span>Delivered Orders</span></b
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="header">
+        <div class="nav">
+          <div class="user">
+            <a href="additem.html" class="btn">Add Your Dish</a>
+            <a href="#"><img src="images/notification.png" alt="" /></a>
+            <div class="img-case">
+              <a href="#"><img src="images/profile.png" alt="" /></a>
+            </div>
+            <div>
+              <a href="login.html" class="btn" onclick="signout(this)">Signout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <div class="box">
+              <h1>Pending</h1>
+              <h2>54</h2>            </div>
+            <div class="icon-case">
+              <img src="images/wall-clock.png" alt="" width="40px">
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="box">
+              <h1>Accepted</h1>
+              <h2>54</h2>            </div>
+            <div class="icon-case">
+              <img src="images/accept-circular-button-outline.png" alt="" width="40px">
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <h1>Delivered</h1>
+              <h2>54</h2>
+            </div>
+            <div class="icon-case">
+              <img src="images/delivered.png" alt="" width="40px">
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <h1>Income</h1>
+              <h2>$6K</h2>
+            </div>
+            <div class="icon-case">
+              <img src="images/income.png" alt="" width="40px">
+            </div>
+          </div>
+        </div>
+        <div class="content-2">
+          <div class="order-list">
+            <div class="title">
+              <h2>Orders List</h2>
+              <a href="" class="btn"> View All</a>
+            </div>
+          </div>
+          <div class="delivered-order">
+            <div class="title">
+              <h2>Delievery list</h2>
+              <a href="" class="btn"> View All</a>
+            </div>
+            <ol>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
